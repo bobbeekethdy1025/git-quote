@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Gallery, Painting } = require('../models');
+// const { Gallery, Painting } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
@@ -7,7 +7,7 @@ const withAuth = require('../utils/auth');
 // Use the custom middleware before allowing the user to access the gallery
 
 router.get('/', async (req, res) => {
-    res.render('homepage');
+    res.render('homepage', {loggedIn: req.session.loggedIn});
 });
 
 router.get('/login', (req, res) => {
