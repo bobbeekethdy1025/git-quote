@@ -24,7 +24,7 @@
             <li><a href="#"></a></li>
           </ul>
         <li><a href="/login">Login/Sign Up</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="/" id="logout">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -54,7 +54,9 @@
     </ul>
   </div> --}}
  
-
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
