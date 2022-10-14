@@ -14,24 +14,24 @@
 // }
 
 // noteBtn.addEventListener('click', appendNote);
-const saveRecipe = async () => {
-    const recipeName = document.querySelector('#recipe-name') 
+// const saveRecipe = async () => {
+//     const recipeName = document.querySelector('#recipe-name') 
   
-      const response = await fetch('/api/profile', {
-        method: 'POST',
-        body: JSON.stringify({ recipeName }),
-        headers: { 'Content-Type': 'application/json' },
-      });
+//       const response = await fetch('/api/profile', {
+//         method: 'POST',
+//         body: JSON.stringify({ recipeName }),
+//         headers: { 'Content-Type': 'application/json' },
+//       });
   
-      if (response.ok) {
-        document.location.replace('/profile');
-      } else {
-        alert(response.statusText);
-      }
+//       if (response.ok) {
+//         document.location.replace('/profile');
+//       } else {
+//         alert(response.statusText);
+//       }
     
-  };
+//   };
 
-  document
-  .querySelector('#save-fav')
-  .addEventListener('click', saveRecipe);
+//   document
+//   .querySelector('#save-fav')
+//   .addEventListener('click', saveRecipe);
 
