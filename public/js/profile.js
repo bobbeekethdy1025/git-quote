@@ -39,13 +39,13 @@ const signupFormHandler = async (event) => {
     }
   };
 
-  var options = {
-    'method': 'POST',
-    'url': 'https://api.spoonacular.com/recipes/random?apiKey=',
-    'headers': {
-      'X-API-KEY': 'E6xwOg2BY4RbmiJogfyegrt746r7te',
-      'Content-Type': 'application/json'
-    }
-  };
-  const result = await axios(options);
+  // var options = {
+  //   'method': 'POST',
+  //   'url': 'https://api.spoonacular.com/recipes/random?apiKey=',
+  //   'headers': {
+  //     'X-API-KEY': 'E6xwOg2BY4RbmiJogfyegrt746r7te',
+  //     'Content-Type': 'application/json'
+  //   }
+  // };
+  // const result = await axios(options);
   // You can print/use 'result' here.
