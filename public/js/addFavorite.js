@@ -4,6 +4,7 @@
 
 // capture the element as a variable so we can attach event listener
 var $favBtn = $("#add-favorite-btn");
+var favSection = $("#favoriteRecipes");
 
 $favBtn.on('click', postNewFavorite);
 
@@ -15,8 +16,12 @@ function postNewFavorite(event) {
     const rTitle = $card.attr('data-recipe-title');
     const newFavorite = {
         recipe_id : rId,
-        recipe_title: rTtitle,
+        recipe_title: rTitle,
     };
+    var favs = document.createElement("p")
+    favs.innerHTML = newFavorite.recipe_title
+    favSection.append(favs)
+    console.log(newFavorite)
     fetch('/api/favorites', {
         method: "POST",
         body: JSON.stringify(newFavorite),

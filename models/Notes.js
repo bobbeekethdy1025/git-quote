@@ -20,14 +20,14 @@ Note.init(
             type: DataTypes.INTEGER,
             references: {
               model: 'user',
-              key: 'user_id',
+              key: 'id',
             },
           },
           recipe_id: {
             type: DataTypes.INTEGER,
             references: {
               model: 'favorite',
-              key: 'favorite_id',
+              key: 'id',
             },
           },
 
