@@ -10,22 +10,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <link href="../../public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <title>Random Recipe</title>
 </head>
 
 <body>
-
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">Random Recipe</li>
-        <li><a href="/">Homepage</a>
-        <li><a href="/profile">Profile</a></li>
-        <li><a href="/login">Sign Up</a></li>
-      </ul>
+  <header>
+    <div class=" row top-bar">
+      <h1 class="menu-text">Random Recipe</h1>
+      <div class="column med-6">
+      </div>
+      <div class="column med-6">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li><a href="/" class="">Homepage</a>
+          <li><a href="/profile">Profile</a></li>
+          <li><a href="/login">Sign Up</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </header>
 
   <div>
 
@@ -78,8 +81,8 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
   crossorigin="anonymous"></script>
-    <script>
-      $(document).foundation();
-    </script>
+<script>
+  $(document).foundation();
+</script>
 
 </html>
