@@ -2,3 +2,15 @@
     max-width: 20%;
     max-height: 20%;
 }
+
+.menu a:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+.login-background {
+    position: absolute;
+    z-index: -1;
+    opacity: 25%;
+    max-width: 100%;
+}
