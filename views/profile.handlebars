@@ -11,7 +11,7 @@
     </div>
 </div>
 <div class="card" style="width: 300px;" data-recipe-id={{randomRecipe.id}}>
-  {{randomRecipe.title}}
+ <h2 id="recipe-name">{{randomRecipe.title}} </h2> 
   <div class="card-divider"></div>
   <img src={{randomRecipe.image}}>
   <div class="card-section">
@@ -19,15 +19,15 @@
     <p>{{randomRecipe.instructions}}</p>
     <h4>Notes</h4>
   </div>
-  <button id="instruction-btn"class="submit success button">Save to Favorites</button>
+  <button id="save-fav"class="submit success button">Save to Favorites</button>
 </div>
-<div class="callout">
+{{!-- <div class="callout">
   <h5>Notes on Recipe</h5>
     <ul id="note-body"></ul>
 
 
   <input type="text" id="note-input"></input>
   <button id="notes-btn" class="submit success button">Save Notes</button>
-</div>
+</div> --}}
 
-
+ <script src="/js/profile.js"></script>
