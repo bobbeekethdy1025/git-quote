@@ -4,7 +4,7 @@ const url = "https://api.spoonacular.com/recipes/random?apiKey=" + process.env.A
 
 
 
-
+// api/recipes/
 router.get('/', async(req,res)=>{
 
 try {
