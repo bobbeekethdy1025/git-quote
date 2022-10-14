@@ -10,8 +10,13 @@
             </li>
     </div>
 </div>
-<div class="card" style="width: 300px;" data-recipe-id={{randomRecipe.id}}>
- <h2 id="recipe-name">{{randomRecipe.title}} </h2> 
+<div class="card" style="width: 300px;"
+  data-recipe-id={{randomRecipe.id}}
+  data-recipe-image={{randomRecipe.image}}
+  data-recipe-title={{randomRecipe.title}}
+  data-recipe-instructions={{randomRecipe.instructions}}
+  id="current-recipe-card">
+  {{randomRecipe.title}}
   <div class="card-divider"></div>
   <img src={{randomRecipe.image}}>
   <div class="card-section">
@@ -19,7 +24,7 @@
     <p>{{randomRecipe.instructions}}</p>
     <h4>Notes</h4>
   </div>
-  <button id="save-fav"class="submit success button">Save to Favorites</button>
+  <button id="add-favorite-btn"class="submit success button">Save to Favorites</button>
 </div>
 {{!-- <div class="callout">
   <h5>Notes on Recipe</h5>
@@ -28,6 +33,6 @@
 
   <input type="text" id="note-input"></input>
   <button id="notes-btn" class="submit success button">Save Notes</button>
-</div> --}}
+</div>
 
- <script src="/js/profile.js"></script>
+<script src="/js/addFavorite.js"></script>
