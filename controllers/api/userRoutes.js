@@ -64,7 +64,7 @@ router.post('/login', async (req, res) => {
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
-      res.redirect('/login');
+      res.redirect('/logout');
     });
   } else {
     res.status(404).end();
