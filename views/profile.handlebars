@@ -18,9 +18,11 @@
   data-recipe-instructions={{randomRecipe.instructions}}
   id="current-recipe-card">
   {{randomRecipe.title}}
+
   <div class="card-divider"></div>
   <img src={{randomRecipe.image}}>
   <div class="card-section">
+
     <h4>Instructions</h4>
     <p>{{randomRecipe.instructions}}</p>
     <h4>Notes</h4>
@@ -31,9 +33,23 @@
   <h5>Notes on Recipe</h5>
     <ul id="note-body"></ul>
 
+{{!-- Modal --}}
+<div class="reveal" id="exampleModal1" data-reveal>
+  <h3>{{randomRecipe.title}}</h3>
+  <p class="lead"><img src={{randomRecipe.image}} alt="delicious recipe">
+</p>
+  <p>{{randomRecipe.instructions}}</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{!-- Modal --}}
+
 
   <input type="text" id="note-input"></input>
   <button id="notes-btn" class="submit success button">Save Notes</button>
 </div>
 
 <script src="/js/addFavorite.js"></script>
+
+

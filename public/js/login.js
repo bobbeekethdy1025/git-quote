@@ -15,6 +15,7 @@ const loginFormHandler = async (event) => {
         document.location.replace('/profile');
       } else {
         alert('Failed to log in.');
+        console.log(response);
       }
     }
   };
@@ -37,6 +38,7 @@ const loginFormHandler = async (event) => {
         document.location.replace('/profile');
       } else {
         alert('Failed to sign up.');
+        console.log(email, password);
       }
     }
   };
