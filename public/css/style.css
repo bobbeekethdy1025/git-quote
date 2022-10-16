@@ -3,6 +3,12 @@
     max-height: 20%;
 } */
 
+header {
+ 
+  margin-bottom: 55px;
+
+}
+
 .menu a:hover {
     background-color: aquamarine;
     color: white;
