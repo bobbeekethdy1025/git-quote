@@ -18,7 +18,10 @@ function postNewFavorite(event) {
         recipe_id : rId,
         recipe_name: rTitle,
     };
-    var favs = document.createElement("p")
+    var favs = document.createElement("button");
+    favs.classList.add("button");
+    favs.setAttribute("data-open", "exampleModal1")
+    // var favs = document.createElement("p")
     favs.innerHTML = newFavorite.recipe_name
     favSection.append(favs)
     console.log(newFavorite)
