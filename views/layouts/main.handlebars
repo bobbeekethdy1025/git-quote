@@ -23,9 +23,15 @@
       <div class="column med-6">
         <ul class="dropdown menu" data-dropdown-menu>
           <li><a href="/" class="">Homepage</a>
+         
+          
+        
+          {{#if loggedIn}}
           <li><a href="/profile">Profile</a></li>
+          <li><a id="logout" href="/logout">Logout</a></li>
+          {{else}}
           <li><a href="/login">Sign Up</a></li>
-          <li><a href="/logout">Logout</a></li>
+          {{/if}}
         </ul>
       </div>
     </div>
