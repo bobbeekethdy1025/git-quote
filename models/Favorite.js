@@ -6,11 +6,11 @@ class Favorite extends Model { }
 
 Favorite.init(
     {
-        id: {
+        recipe_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+           
         },
         recipe_name: {
             type: DataTypes.STRING,

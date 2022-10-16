@@ -27,7 +27,7 @@ Note.init(
             type: DataTypes.INTEGER,
             references: {
               model: 'favorite',
-              key: 'id',
+              key: 'recipe_id',
             },
           },
 
