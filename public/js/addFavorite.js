@@ -16,10 +16,10 @@ function postNewFavorite(event) {
     const rTitle = $card.attr('data-recipe-title');
     const newFavorite = {
         recipe_id : rId,
-        recipe_title: rTitle,
+        recipe_name: rTitle,
     };
     var favs = document.createElement("p")
-    favs.innerHTML = newFavorite.recipe_title
+    favs.innerHTML = newFavorite.recipe_name
     favSection.append(favs)
     console.log(newFavorite)
     fetch('/api/favorites', {
