@@ -15,7 +15,9 @@ img {
   height: 400px;
   background-size: cover;
 position: relative;
-padding-top: -15px;
+/* padding-top: -15px; */
+  height: auto;
+  width: 100%;
 }
 
 
@@ -77,11 +79,11 @@ padding-top: -15px;
     color: white;
   }
   
-  @media screen and (max-width: 39.9375em) {
+  /* @media screen and (max-width: 39.9375em) {
     .responsive-blog-footer h4 {
       font-size: 1.5rem;
     }
-  }
+  } */
   
   .responsive-blog-footer p {
     color: #8a8a8a;
