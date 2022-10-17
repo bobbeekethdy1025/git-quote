@@ -6,7 +6,8 @@ router.post('/', async (req, res) => {
   if (req.session.loggedIn) {
       let fullPostData = await Favorite.create( {
           ...req.body,
-          user_id: req.session.userId
+        user_id: req.session.userId
+          
       });
       res.json('added favorite'); 
       // Favorite.create(fullPostData).then(insertSuccess => res.json('Favorite added successfully'))
