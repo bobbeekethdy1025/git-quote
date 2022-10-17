@@ -1,6 +1,4 @@
 const renderFavoriteList = () => {
-    const favListEl = document.querySelector('#favorite-list');
-
         fetch('/api/favorites')
         .then(function (response) {
             return response.json();
@@ -9,10 +7,15 @@ const renderFavoriteList = () => {
         .then(function (data) {
        
             for (let i = 0; i < data.length; i++) {
-
-                var favorites = document.createElement("li")
-                favorites.innerHTML = data[i].recipe_name
-                favListEl.append(favorites)
+                const favListEl = document.querySelector('#favorite-list');
+                
+                const sectionEl = document.createElement('tr');
+                favListEl.append(sectionEl); 
+                
+                const favoriteName = document.createElement('td');
+                favoriteName.innerHTML = data[i].recipe_name;
+                sectionEl.append(favoriteName);
+             
             }
       
         });

@@ -1,6 +1,6 @@
 var $favBtn = $("#add-favorite-btn");
 var favSection = $("#favoriteRecipes");
-var favoriteHistory = [];
+// var favoriteHistory = [];
 
 
 $favBtn.on('click', postNewFavorite);
