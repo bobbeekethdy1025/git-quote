@@ -1,4 +1,4 @@
-var apiKEY = "6e1b887e124643e7bde60adaa7389a66"
+var apiKEY = "fe0f3c9fbbc74ccf8e791d6b424e0e86"
 
 var URL = "https://api.spoonacular.com/recipes/random?apiKey=" + apiKEY;
 
