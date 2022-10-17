@@ -1,5 +1,7 @@
 # Random Recipe
 
+![alt text](./assets/images/project%202%20homescreen.png)
+![alt text](./assets/images/project%202%20homescreen.png)
 
 
 ## Description
