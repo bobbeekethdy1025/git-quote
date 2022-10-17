@@ -10,59 +10,56 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <title>Random Recipe</title>
 </head>
 
 <body>
-  <header>
-    <div class=" row top-bar">
+  <header style ="margin: 0%;">
+    {{!-- style ="background-color: red; --}}
+    <div class="row top-bar">
       <h3 class="menu-text">Random Recipe</h3>
       <div class="column med-6">
       </div>
-      <div class="column med-6">
-        <ul class="dropdown menu" data-dropdown-menu>
+      <div class="column med-6" style="background-color: #deba8c9c">
+        <ul class="dropdown menu " data-dropdown-menu>
           <li><a href="/" class="">Homepage</a>
+         
+        
+        
+          {{#if loggedIn}}
           <li><a href="/profile">Profile</a></li>
+          <li><a id="logout" href="/logout">Logout</a></li>
+          {{else}}
           <li><a href="/login">Sign Up</a></li>
-          <li><a href="/logout">Logout</a></li>
+          {{/if}}
         </ul>
       </div>
     </div>
   </header>
 
   <div>
-
-    <main class="col-auto">
+    <main>
       {{{body}}}
     </main>
   </div>
 
-  {{!-- <div class="card-section">
-    <h4>Hundreds of unique recipes for every occassion</h4>
-    <p>Sign-up today to access full site benefits</p>
-  </div>
-  </div>
-  </div>
-  <div>
-    <image src="../../assets/images/homepage_table.jpg"></image>
-  </div>
-  <div>
-    <ul class="menu">
-      <li><a href="#">Item One</a></li>
-      <li><a href="#">Item Two</a></li>
-      <li><a href="#">Item Three</a></li>
-    </ul>
-  </div> --}}
-  {{!-- <div>
-    <nav aria-label="Pagination">
-      <ul class="pagination">
-        <li><a href="/logout">Logout</a></li>
+  <footer class="responsive-blog-footer" style="padding: 10px;">
+  <div class="grid-x" style="text-align:center; font-size:x-large; margin: 5px; height: 35px;">
+    <div class="cell small-6">
+      <h4>Follow us on GitHub</h4>
+    </div>
+    <div class="cell small-6">
+      <ul class="menu simple tag-section" style="margin: 10px;">
+        <li><a href="https://github.com/terrencebudnik" target="_blank">Terrence</a></li>
+        <li><a href="https://github.com/bobbeekethdy1025" target="_blank">Bobbee</a></li>
+        <li><a href="https://github.com/T8886" target="_blank">Tatiana</a></li>
+        <li><a href="https://github.com/Marianellag1" target="_blank">Marianella</a></li>
       </ul>
-    </nav>
-
-  </div> --}}
-
+    </div>
+  </div>
+</footer>
 
 
 

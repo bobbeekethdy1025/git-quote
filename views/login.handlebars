@@ -1,40 +1,51 @@
-<div class="row">
-    <img class="login-background" src="/images/login page.png" alt="">
-  <div class="column med-6" style="border-style:solid;">
-    <h2>Login</h2>
+{{!-- <div> --}}
+  <section>
+    <img class="login-background" src="/images/login page.png" alt="Login/Sign-up background image">
+    {{!-- <div class="column med-6" style="border-style:solid;">
+    </div> --}}
+  </section>
+  <section>
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+    {{!-- removed i forgot what, added divs. --}}
+    <div class="grid-x" style="width: fit-content; margin-left: 103px;">
+      {{!-- style="width: fit-content; margin: auto;"--}}
+      <div class="cell word" style="border-style:solid; margin:10px;">
+        <h2><strong>Login</strong></h2>
+        <form class="form login-form">
+          <div class="form-group">
+            <label class="label" for="email-login">Email:</label>
+            <input class="form-input" type="text" id="email-login" />
+          </div>
+          <div class="form-group">
+            <label class="label" for="password-login">Password:</label>
+            <input class="form-input" type="password" id="password-login" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit " style="color: white;"><strong>Login</strong></button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-<br>
-  <div class="column med-6" style="border-style:solid;">
-    <h2>Signup</h2>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
+      <div class="cell word" style="border-style:solid; margin:10px;">
+        <h2><strong>Sign-Up</strong></h2>
+        <form class="form signup-form">
+          <div class="form-group">
+            <label class="label" for="email-signup">Email:</label>
+            <input class="form-input" type="text" id="email-signup" />
+          </div>
+          <div class="form-group">
+            <label class="label" for="password-signup">Password:</label>
+            <input class="form-input" type="password" id="password-signup" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" style="color: white;"><strong>Sign-Up</strong></button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
+    </div>
+    {{!--
+</div> --}}
+</section>
+
 
 <script src="../js/login.js"></script>

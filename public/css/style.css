@@ -3,67 +3,107 @@
     max-height: 20%;
 } */
 
+/* header {
+  margin-bottom: 55px;
+
+} */
+
+* {
+
+  font-family: 'Varela Round', sans-serif;
+}
+
+.top-bar, .top-bar ul {
+  background-color:  #deba8c9c;
+}
+
 .menu a:hover {
-    background-color: aquamarine;
-    color: white;
+  background-color: aquamarine;
+  color: white;
 }
 
 .login-background {
-    position: absolute;
-    z-index: -1;
-    opacity: 25%;
-    max-width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 80%;
+  /*went up to 70, was a little too opac.*/
+  max-width: 100%;
+  width: -webkit-fill-available;
+  height: fit-content;
 }
 
+.word h2 {
+  padding: 10px;
+  color: white;
+}
+
+.label {
+  background-color: burlywood;
+
+}
+
+.form {
+  padding: 10px;
+}
+
+.form-group button:hover {
+  background-color: aquamarine;
+  color: white;
+}
+
+/* .form-group btn {
+  color: white;
+} */
+
 .responsive-blog-footer {
-    background: #4a4a4a;
-    padding: 3rem 3rem;
-    color: white;
+  background: #4a4a4a;
+  padding: 3rem 3rem;
+  color: white;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .responsive-blog-footer h4 {
+    font-size: 1.5rem;
   }
-  
-  @media screen and (max-width: 39.9375em) {
-    .responsive-blog-footer h4 {
-      font-size: 1.5rem;
-    }
-  }
-  
-  .responsive-blog-footer p {
-    color: #8a8a8a;
-  }
-  
-  .responsive-blog-footer .mailing-list {
-    margin-bottom: 1.5rem;
-  }
-  
-  .responsive-blog-footer .mailing-container {
-    margin-bottom: 2rem;
-  }
-  
-  .responsive-blog-footer .about-section, .responsive-blog-footer .tag-section {
-    margin-bottom: 2rem;
-  }
-  
-  .responsive-blog-footer .about-section a, .responsive-blog-footer .tag-section a {
-    color: #1779ba;
-  }
-  
-  .responsive-blog-footer .subscribe-button {
-    background-color: #1779ba;
-  }
-  
-  .responsive-blog-footer .subscribe-button:hover {
-    background-color: #146aa3;
-    transition: color 0.3s ease-in;
-  }
-  
-  .responsive-blog-footer .fa-chevron-circle-up {
-    font-size: 3rem;
-    color: #8a8a8a;
-  }
-  
-  .responsive-blog-footer .fa-chevron-circle-up:hover {
-    color: #b0b0b0;
-    transition: color 0.3s ease-in;
-  }
-  
-  
+}
+
+.responsive-blog-footer p {
+  color: #8a8a8a;
+}
+
+.responsive-blog-footer .mailing-list {
+  margin-bottom: 1.5rem;
+}
+
+.responsive-blog-footer .mailing-container {
+  margin-bottom: 2rem;
+}
+
+.responsive-blog-footer .about-section,
+.responsive-blog-footer .tag-section {
+  margin-bottom: 2rem;
+}
+
+.responsive-blog-footer .about-section a,
+.responsive-blog-footer .tag-section a {
+  color: #1779ba;
+}
+
+.responsive-blog-footer .subscribe-button {
+  background-color: #1779ba;
+}
+
+.responsive-blog-footer .subscribe-button:hover {
+  background-color: #146aa3;
+  transition: color 0.3s ease-in;
+}
+
+.responsive-blog-footer .fa-chevron-circle-up {
+  font-size: 3rem;
+  color: #8a8a8a;
+}
+
+.responsive-blog-footer .fa-chevron-circle-up:hover {
+  color: #b0b0b0;
+  transition: color 0.3s ease-in;
+}
