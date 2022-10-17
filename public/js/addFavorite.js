@@ -1,37 +1,51 @@
-/**
- * We want to add an event listener to the "add-favorite-btn" so that when it is clicked the data regarding the recipe on the page will be packaged in a POST fetch request to some route on my server that will use sequelize to add recipe data and the user data to the favorites model.
- */
-
-// capture the element as a variable so we can attach event listener
 var $favBtn = $("#add-favorite-btn");
 var favSection = $("#favoriteRecipes");
+var favoriteHistory = [];
+
 
 $favBtn.on('click', postNewFavorite);
 
 function postNewFavorite(event) {
     event.preventDefault();
-    //package the data we want to post
     const $card = $("#current-recipe-card");
     const rId = $card.attr('data-recipe-id');
     const rTitle = $card.attr('data-recipe-title');
     const newFavorite = {
-        recipe_id : rId,
+        recipe_id: rId,
         recipe_name: rTitle,
     };
     var favs = document.createElement("button");
     favs.classList.add("button");
     favs.setAttribute("data-open", "exampleModal1")
-    // var favs = document.createElement("p")
     favs.innerHTML = newFavorite.recipe_name
     favSection.append(favs)
     console.log(newFavorite)
     fetch('/api/favorites', {
         method: "POST",
         body: JSON.stringify(newFavorite),
-        headers: {'Content-Type': 'application/json'}
+        headers: { 'Content-Type': 'application/json' }
     }).then(response => response.json())
-    .then(response => {
-        console.log('favorite post request success')
-    })
-    
-}
+        .then(response => {
+            console.log('Favorite post request success')
+        })
+
+//     favoriteHistory.push(newFavorite.recipe_name);
+
+//     document.localStorage.setItem("favoriteItem", JSON.stringify(favoriteHistory));
+ }
+
+// var showFavoriteList = function () {
+//     if (localStorage.length > 0) {
+//         favoriteHistory = JSON.parse(localStorage.getItem("favoriteItem"));
+
+//         for (var x = 0; x < 10; x++) {
+//             var favs = document.createElement("button");
+//             favs.classList.add("button");
+//             favs.setAttribute("data-open", "exampleModal1")
+//             favs.innerHTML = favoriteHistory[x]
+//             favSection.append(favs)
+//         }
+//     }
+// }
+
+// showFavoriteList(); 
