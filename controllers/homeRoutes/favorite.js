@@ -1,7 +1,11 @@
-// const router = require('express').Router();
+const router = require('express').Router();
 
-// router.get('/', (req, res) => {
-//   res.render('favorite');
-// });
 
-// module.exports = router;
+
+router.get('/', (req, res) => {
+  res.render('favorite');
+
+});
+  module.exports = router;
+
+  
