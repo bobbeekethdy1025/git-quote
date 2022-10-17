@@ -10,21 +10,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <title>Random Recipe</title>
 </head>
 
 <body>
-  <header style ="background-color: red !important;">
+  <header style ="margin: 0%;">
+    {{!-- style ="background-color: red; --}}
     <div class="row top-bar">
       <h3 class="menu-text">Random Recipe</h3>
       <div class="column med-6">
       </div>
-      <div class="column med-6">
-        <ul class="dropdown menu" data-dropdown-menu>
+      <div class="column med-6" style="background-color: #deba8c9c">
+        <ul class="dropdown menu " data-dropdown-menu>
           <li><a href="/" class="">Homepage</a>
          
-          
+        
         
           {{#if loggedIn}}
           <li><a href="/profile">Profile</a></li>
@@ -38,30 +40,22 @@
   </header>
 
   <div>
-
-    <main class="col-auto">
+    <main>
       {{{body}}}
     </main>
   </div>
 
-  <footer class="responsive-blog-footer">
-  <div class="row">
-    <div class="medium-8 columns small-order-2 medium-order-1 about-container">
-      <div class="row">
-        <div class="hide-for-small-only medium-4 columns about-section">
-          {{!-- <img src="https://placehold.it/250x250"> --}}
-        </div>
-      </div>
+  <footer class="responsive-blog-footer" style="padding: 10px;">
+  <div class="grid-x" style="text-align:center; font-size:x-large; margin: 5px; height: 35px;">
+    <div class="cell small-6">
+      <h4>Follow us on GitHub</h4>
     </div>
-  </div>
-  <div class="row tag-search">
-    <div class="columns">
-      <h4>Search by Tag</h4>
-      <ul class="menu simple tag-section">
-        <li><a href="https://github.com/terrencebudnik">Terrance</a></li>
-        <li><a href="">Bobbee</a></li>
-        <li><a href="">Tatiana</a></li>
-        <li><a href="">Marianella</a></li>
+    <div class="cell small-6">
+      <ul class="menu simple tag-section" style="margin: 10px;">
+        <li><a href="https://github.com/terrencebudnik" target="_blank">Terrence</a></li>
+        <li><a href="https://github.com/bobbeekethdy1025" target="_blank">Bobbee</a></li>
+        <li><a href="https://github.com/T8886" target="_blank">Tatiana</a></li>
+        <li><a href="https://github.com/Marianellag1" target="_blank">Marianella</a></li>
       </ul>
     </div>
   </div>
