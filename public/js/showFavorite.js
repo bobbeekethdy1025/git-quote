@@ -15,6 +15,10 @@ const renderFavoriteList = () => {
                 const favoriteName = document.createElement('td');
                 favoriteName.innerHTML = data[i].recipe_name;
                 sectionEl.append(favoriteName);
+
+                const favoriteInstructions = document.createElement('td');
+                favoriteInstructions.innerHTML = data[i].recipe_instructions;
+                sectionEl.append(favoriteInstructions);
              
             }
       

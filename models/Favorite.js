@@ -16,7 +16,7 @@ Favorite.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        recipe_instruction: {
+        recipe_instructions: {
             type: DataTypes.STRING,
             allowNull: false,
         },

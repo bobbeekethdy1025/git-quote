@@ -10,13 +10,15 @@ function postNewFavorite(event) {
     const $card = $("#current-recipe-card");
     const rId = $card.attr('data-recipe-id');
     const rTitle = $card.attr('data-recipe-title');
+    const rInstructions = $card.attr('data-recipe-instructions');
     const newFavorite = {
         recipe_id: rId,
         recipe_name: rTitle,
+        recipe_instructions: rInstructions,
     };
-    var favs = document.createElement("button");
-    favs.classList.add("button");
-    favs.setAttribute("data-open", "exampleModal1")
+    var favs = document.createElement("p");
+    favs.classList.add("p");
+    // favs.setAttribute("data-open", "exampleModal1")
     favs.innerHTML = newFavorite.recipe_name
     favSection.append(favs)
     console.log(newFavorite)
