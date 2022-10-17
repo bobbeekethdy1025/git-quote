@@ -5,7 +5,7 @@ const renderFavoriteList = () => {
         })
     
         .then(function (data) {
-       
+       console.log(data)
             for (let i = 0; i < data.length; i++) {
                 const favTableEl = document.querySelector('#favorite-table');
                 
