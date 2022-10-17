@@ -8,7 +8,8 @@ router.get('/', async (req, res) => {
   try {
     const response = await axios.get(url);
     // res.json(response.data);
-    res.render('profile', { randomRecipe: response.data.recipes[0] });
+    console.log(req.session.userId);
+    res.render('profile', {randomRecipe: response.data.recipes[0], loggedIn: req.session.userId });
   } catch (error) {
     console.error(error);
   }
