@@ -3,6 +3,21 @@
     max-height: 20%;
 } */
 
+/* 
+height: 300px;
+width: auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative; */
+
+img {
+  height: 400px;
+  background-size: cover;
+position: relative;
+padding-top: -15px;
+}
+
 header {
  
   margin-bottom: 55px;
@@ -23,7 +38,7 @@ header {
 
 .responsive-blog-footer {
     background: #4a4a4a;
-    padding: 3rem 3rem;
+    padding: 0.5rem 0.5rem;
     color: white;
   }
   
@@ -46,7 +61,7 @@ header {
   }
   
   .responsive-blog-footer .about-section, .responsive-blog-footer .tag-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .responsive-blog-footer .about-section a, .responsive-blog-footer .tag-section a {
