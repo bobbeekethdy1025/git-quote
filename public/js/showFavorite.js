@@ -7,10 +7,10 @@ const renderFavoriteList = () => {
         .then(function (data) {
        
             for (let i = 0; i < data.length; i++) {
-                const favListEl = document.querySelector('#favorite-list');
+                const favTableEl = document.querySelector('#favorite-table');
                 
                 const sectionEl = document.createElement('tr');
-                favListEl.append(sectionEl); 
+                favTableEl.append(sectionEl); 
                 
                 const favoriteName = document.createElement('td');
                 favoriteName.innerHTML = data[i].recipe_name;
