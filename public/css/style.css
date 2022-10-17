@@ -30,6 +30,9 @@
   max-width: 100%;
   width: -webkit-fill-available;
   height: fit-content;
+  /* height: auto; */
+  width: 100%;
+  /* background-size: cover; */
 }
 
 .word h2 {
@@ -54,6 +57,14 @@
 /* .form-group btn {
   color: white;
 } */
+
+footer {
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+/* height: auto; */
+}
 
 .responsive-blog-footer {
   background: #4a4a4a;
