@@ -16,6 +16,10 @@ Favorite.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        recipe_instructions: {
+            type: DataTypes.TEXT,
+            allowNull: false,
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
