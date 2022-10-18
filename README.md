@@ -13,6 +13,12 @@ To use this application, user will need to clone this repo onto their system, se
 Users will be able to signup/login for the website and be able to view their profile.
 On their profile users will be shown a random recipe, generated from our api, and users will have the option to write a note on the recipe and favorite it for future use.
 
+## Testing
+
+For an easier testing experience, a dummy email and password is provided.
+* Email: test123@test.com
+* Password: 123456
+
 ## Questions
 
 If there are any questions about our application, please feel free to email any of us.
